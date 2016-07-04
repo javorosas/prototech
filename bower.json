@@ -1,0 +1,21 @@
+{
+  "name": "prototech",
+  "description": "Prototyping studio",
+  "main": "server.js",
+  "authors": [
+    "Javo Rosas"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "www.prototech.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "H5F": "h5f#^1.1.1"
+  }
+}

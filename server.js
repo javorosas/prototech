@@ -3,6 +3,8 @@ var express = require('express');
 var compression = require('compression');
 var helmet = require('helmet');
 var path = require('path');
+var bodyParser = require('body-parser');
+var morgan = require('morgan');
 
 // Confguration
 var port = process.env.OPENSHIFT_NODEJS_PORT || 5000;
@@ -10,18 +12,20 @@ var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 // App
 var app = express();
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Performance
+app.use(helmet());
 app.use(compression());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(morgan('dev'));
 
 // Security
-app.use(helmet());
+
+// Parsers
+app.use(bodyParser.json({ limit: '5mb' }));
+app.use(bodyParser.urlencoded({ limit: '5mb', extended: true }));
 
 // Routes
-app.get('*', function (req, res) {
-  return res.sendFile(path.join(__dirname, 'webapp/in-construction.html'));
-});
+var routes = require('./app/routes');
+routes(app);
 
 // Run
 app.listen(port, ip);

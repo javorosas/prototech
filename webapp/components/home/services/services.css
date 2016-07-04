@@ -1,0 +1,40 @@
+.services {
+  background-color: #00a7ed;
+  padding: 40px 0 80px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.title {
+  padding: 0 15px;
+  font-size: 22px;
+}
+
+.serviceList {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.icon {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  height: 170px;
+  width: 170px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(20, 20, 20, 0.3);
+}
+
+.message {
+  margin: 20px auto;
+  width: 170px;
+}

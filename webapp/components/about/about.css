@@ -1,0 +1,117 @@
+.about {
+  color: #666;
+}
+
+.title {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.about p {
+  line-height: 1.6em;
+}
+
+.sectionPadding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.mapSection {
+  composes: sectionPadding;
+}
+
+.mapSection h3 {
+  line-height: 1.4em;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.map {
+  flex-grow: 3;
+  flex-basis: 0;
+  background-image: url(/img/about/map.jpg);
+  background-size: auto 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+}
+
+.who {
+  flex-grow: 4;
+  flex-basis: 0;
+  padding: 40px 0;
+}
+
+.who p {
+  text-align: justify;
+}
+
+.statements {
+  composes: sectionPadding;
+  background-color: #00a7ed;
+  color: white;
+}
+
+.statement {
+  flex-grow: 1;
+  flex-basis: 0;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.statement:not(:first-child) {
+  padding-left: 50px;
+}
+
+.statement:not(:last-child) {
+  padding-right: 50px;
+}
+
+.team {
+  composes: sectionPadding;
+  background-color: #eee;
+}
+
+.team h2 {
+  color: #00a7ed;
+  padding-bottom: 30px;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+@media(max-width: 992px) {
+  .map {
+    background-size: auto 60%;
+  }
+}
+
+@media(max-width: 768px) {
+  .mapSection {
+    flex-direction: column;
+  }
+
+  .map {
+    background-size: contain;
+  }
+
+  .statement {
+    min-width: 100%;
+  }
+
+  .statement:not(:last-child) {
+    padding: 0 0 20px;
+  }
+
+  .statement:not(:first-child) {
+    padding-left: 0px;
+  }
+
+  .statement:not(:last-child) {
+    padding-right: 0px;
+  }
+}

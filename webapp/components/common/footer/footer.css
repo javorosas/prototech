@@ -1,0 +1,60 @@
+.footer {
+  background-color: #444;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.disclaimer {
+  display: block;
+  padding: 15px 0 20px;
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.linkContainer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.linkSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  background-image: url(/img/logo-white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  width: 250px;
+  height: 60px;
+}
+
+.facebook {
+  border-radius: 5px;
+  background-image: url(/img/facebook.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  margin: -15px 10px;
+}

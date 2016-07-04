@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+}
+
+.navItems {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.logo {
+  composes: navItem from "./nav-item.css";
+  width: 200px;
+  height: 70px;
+  background-image: url(/img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media(max-width: 768px) {
+  .logo {
+    width: 40px;
+    background-image: url(/img/icon.png);
+  }
+}

@@ -1,0 +1,12 @@
+.navLink {
+  composes: navItem from "./nav-item.css";
+  text-decoration: none;
+  padding: 15px;
+  color: #444;
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
+}
+
+.navLink:hover {
+  background-color: #eee;
+}

@@ -1,0 +1,47 @@
+.container {
+  padding-left:15px;
+  padding-right:15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexWrap {
+  composes: flex;
+  flex-wrap: wrap;
+}
+
+.flexContainer {
+  composes: container;
+  composes: flex;
+}
+
+.flexContainerWrap {
+  composes: container;
+  composes: flexWrap;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
