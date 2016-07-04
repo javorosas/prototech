@@ -10,7 +10,7 @@ export default class About extends React.Component {
   render () {
     return (
       <div className={style.about}>
-        <TitleSection img="/img/about/solder-bg.jpg">
+        <TitleSection img="/img/about/bg.jpg">
           Nosotros
         </TitleSection>
         <section className={`${layout.flexContainer} ${style.mapSection}`}>
