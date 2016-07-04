@@ -455,7 +455,7 @@
 ._message_hn7j5_37 {
   margin: 20px auto;
   width: 170px;
-}._titleSection_1nruw_1 {
+}._titleSection_1s3ul_1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -465,10 +465,11 @@
   height: 200px;
 }
 
-._title_1nruw_1 {
+._title_1s3ul_1 {
   color: white;
   text-transform: uppercase;
   font-size: 28px;
+  text-shadow: 0 0 15px rgba(0,0,0,0.6);
 }._info_m8t2w_1 {
   background-color: #eee;
   padding-bottom: 50px;
