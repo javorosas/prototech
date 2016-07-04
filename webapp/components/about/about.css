@@ -99,6 +99,12 @@
     background-size: contain;
   }
 
+  .who {
+    flex-grow: initial;
+    flex-basis: initial;
+    padding: 10px 0 0; 
+  }
+
   .statement {
     min-width: 100%;
   }

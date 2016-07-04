@@ -39,11 +39,11 @@
   ._container_12swx_1 {
     width: 1170px;
   }
-}._about_bvxn9_1 {
+}._about_1s5fx_1 {
   color: #666;
 }
 
-._title_bvxn9_5 {
+._title_1s5fx_5 {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
@@ -51,25 +51,25 @@
   margin-top: 0;
 }
 
-._about_bvxn9_1 p {
+._about_1s5fx_1 p {
   line-height: 1.6em;
 }
 
-._sectionPadding_bvxn9_17 {
+._sectionPadding_1s5fx_17 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-._mapSection_bvxn9_22 {
+._mapSection_1s5fx_22 {
 }
 
-._mapSection_bvxn9_22 h3 {
+._mapSection_1s5fx_22 h3 {
   line-height: 1.4em;
   font-weight: normal;
   font-size: 22px;
 }
 
-._map_bvxn9_22 {
+._map_1s5fx_22 {
   flex-grow: 3;
   flex-basis: 0;
   background-image: url(/img/about/map.jpg);
@@ -79,77 +79,83 @@
   min-height: 200px;
 }
 
-._who_bvxn9_42 {
+._who_1s5fx_42 {
   flex-grow: 4;
   flex-basis: 0;
   padding: 40px 0;
 }
 
-._who_bvxn9_42 p {
+._who_1s5fx_42 p {
   text-align: justify;
 }
 
-._statements_bvxn9_52 {
+._statements_1s5fx_52 {
   background-color: #00a7ed;
   color: white;
 }
 
-._statement_bvxn9_52 {
+._statement_1s5fx_52 {
   flex-grow: 1;
   flex-basis: 0;
   font-weight: 300;
   text-align: justify;
 }
 
-._statement_bvxn9_52:not(:first-child) {
+._statement_1s5fx_52:not(:first-child) {
   padding-left: 50px;
 }
 
-._statement_bvxn9_52:not(:last-child) {
+._statement_1s5fx_52:not(:last-child) {
   padding-right: 50px;
 }
 
-._team_bvxn9_73 {
+._team_1s5fx_73 {
   background-color: #eee;
 }
 
-._team_bvxn9_73 h2 {
+._team_1s5fx_73 h2 {
   color: #00a7ed;
   padding-bottom: 30px;
 }
 
-._spaceAround_bvxn9_83 {
+._spaceAround_1s5fx_83 {
   justify-content: space-around;
 }
 
 @media(max-width: 992px) {
-  ._map_bvxn9_22 {
+  ._map_1s5fx_22 {
     background-size: auto 60%;
   }
 }
 
 @media(max-width: 768px) {
-  ._mapSection_bvxn9_22 {
+  ._mapSection_1s5fx_22 {
     flex-direction: column;
   }
 
-  ._map_bvxn9_22 {
+  ._map_1s5fx_22 {
     background-size: contain;
   }
 
-  ._statement_bvxn9_52 {
+  ._who_1s5fx_42 {
+    flex-grow: initial;
+    flex-basis: initial;
+    padding: 10px 0 0; 
+  }
+
+  ._statement_1s5fx_52 {
     min-width: 100%;
   }
 
-  ._statement_bvxn9_52:not(:last-child) {
+  ._statement_1s5fx_52:not(:last-child) {
     padding: 0 0 20px;
   }
 
-  ._statement_bvxn9_52:not(:first-child) {
+  ._statement_1s5fx_52:not(:first-child) {
     padding-left: 0px;
   }
 
-  ._statement_bvxn9_52:not(:last-child) {
+  ._statement_1s5fx_52:not(:last-child) {
     padding-right: 0px;
   }
 }._member_1d6yo_1 {
