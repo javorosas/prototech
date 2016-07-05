@@ -32,6 +32,7 @@
 .map {
   flex-grow: 3;
   flex-basis: 0;
+  flex-shrink: 0;
   background-image: url(/img/about/map.jpg);
   background-size: auto 80%;
   background-position: center;
@@ -42,6 +43,7 @@
 .who {
   flex-grow: 4;
   flex-basis: 0;
+  flex-shrink: 0;
   padding: 40px 0;
 }
 
@@ -53,6 +55,7 @@
   composes: sectionPadding;
   background-color: #00a7ed;
   color: white;
+  overflow: hidden;
 }
 
 .statement {
@@ -96,12 +99,12 @@
   }
 
   .map {
+    flex-grow: initial;
     background-size: contain;
   }
 
   .who {
     flex-grow: initial;
-    flex-basis: initial;
     padding: 10px 0 0; 
   }
 
