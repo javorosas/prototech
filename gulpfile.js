@@ -7,12 +7,18 @@ var cssModulesify = require('css-modulesify');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var streamify = require('gulp-streamify');
+var gulpif = require('gulp-if');
 
-process.env.NODE_ENV = 'production';
+// process.env.NODE_ENV = 'production';
 
-var b = browserify('./webapp/app.js')
-  .plugin(watchify)
-  .plugin(cssModulesify, {
+var isProduction = process.env.NODE_ENV === 'production';
+
+var b = browserify('./webapp/app.js');
+if (!isProduction) {
+  b.plugin(watchify);
+}
+b.plugin(
+  cssModulesify, {
     rootDir: './webapp',
     output: 'public/bundle.css'
   })
@@ -27,7 +33,7 @@ function bundle () {
     .bundle()
     .on('error', console.log)
     .pipe(source('bundle.js'))
-    .pipe(streamify(uglify()))
+    .pipe(gulpif(isProduction, streamify(uglify())))
     .pipe(gulp.dest('./public/'));
 }
 
