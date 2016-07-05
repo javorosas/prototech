@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var streamify = require('gulp-streamify');
 var gulpif = require('gulp-if');
 
+// # Simulate production environment
 // process.env.NODE_ENV = 'production';
 
 var isProduction = process.env.NODE_ENV === 'production';
