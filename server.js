@@ -8,7 +8,7 @@ var morgan = require('morgan');
 
 // Confguration
 var port = process.env.OPENSHIFT_NODEJS_PORT || 5000;
-var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var ip = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 // App
 var app = express();

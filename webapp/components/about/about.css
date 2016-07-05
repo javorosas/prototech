@@ -59,8 +59,8 @@
 }
 
 .statement {
-  flex-grow: 1;
-  flex-basis: 0;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
   font-weight: 300;
   text-align: justify;
 }
@@ -99,21 +99,18 @@
   }
 
   .map {
-    flex-grow: initial;
+    flex: auto;
     background-size: contain;
   }
 
   .who {
-    flex-grow: initial;
+    flex: auto;
     padding: 10px 0 0; 
   }
 
   .statement {
-    min-width: 100%;
-  }
-
-  .statement:not(:last-child) {
-    padding: 0 0 20px;
+    flex: auto;
+    width: 100%;
   }
 
   .statement:not(:first-child) {
@@ -121,6 +118,6 @@
   }
 
   .statement:not(:last-child) {
-    padding-right: 0px;
+    padding: 0 0 20px;
   }
 }

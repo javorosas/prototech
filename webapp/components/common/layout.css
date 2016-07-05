@@ -7,11 +7,14 @@
 }
 
 .flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
 .flexWrap {
   composes: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
