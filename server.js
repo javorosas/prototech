@@ -17,8 +17,6 @@ app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
 
-// Security
-
 // Parsers
 app.use(bodyParser.json({ limit: '5mb' }));
 app.use(bodyParser.urlencoded({ limit: '5mb', extended: true }));
