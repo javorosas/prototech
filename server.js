@@ -5,10 +5,15 @@ var helmet = require('helmet');
 var path = require('path');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
+var mongoose = require('mongoose');
 
 // Confguration
 var port = process.env.OPENSHIFT_NODEJS_PORT || 5000;
 var ip = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+
+// Database
+var config = require('./config');
+mongoose.connect(config.databaseUrl);
 
 // App
 var app = express();
